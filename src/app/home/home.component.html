@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <mat-icon>menu</mat-icon>
+        <span class="toolbar-spacer"></span>
+        <span>Raif</span>
+        <span class="toolbar-spacer"></span>
+        <mat-icon matBadge="15">chat_bubble</mat-icon>
+        <button mat-icon-button [routerLink]="['/settings']">
+            <mat-icon>settings</mat-icon>
+        </button>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <span>500 000</span>
+        <mat-icon>currency_ruble</mat-icon>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <button mat-icon-button [routerLink]="['/pay']"><mat-icon>qr_code</mat-icon></button>
+        <span class="toolbar-spacer"></span>
+        <mat-icon>bolt</mat-icon>
+        <span class="toolbar-spacer"></span>
+        <mat-icon>currency_exchange</mat-icon>
+        <span class="toolbar-spacer"></span>
+        <mat-icon>edit</mat-icon>
+    </mat-toolbar-row>
+</mat-toolbar>

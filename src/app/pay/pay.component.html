@@ -1,0 +1,31 @@
+<mat-toolbar>
+    <button mat-icon-button [routerLink]="['/']"><mat-icon>arrow_back</mat-icon></button>
+    <span class="toolbar-spacer"></span>
+    <span>Pay QR</span>
+    <span class="toolbar-spacer"></span>
+    <mat-icon>qr_code</mat-icon>
+</mat-toolbar>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Coffee Love</mat-card-title>
+        <mat-card-subtitle>Primary Payment</mat-card-subtitle>
+        <img mat-card-avatar src="https://cdn-icons-png.flaticon.com/256/5664/5664063.png">
+    </mat-card-header>
+    <mat-card-content>
+        <mat-icon>local_cafe</mat-icon>
+        <p>175₽</p>
+    </mat-card-content>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Red Cross</mat-card-title>
+        <mat-card-subtitle>Little Fish</mat-card-subtitle>
+        <img mat-card-avatar src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Red_Cross.png">
+    </mat-card-header>
+    <mat-card-content>
+        <mat-icon>bloodtype</mat-icon>
+        <p>25₽</p>
+    </mat-card-content>
+</mat-card>
+<mat-toolbar></mat-toolbar>
+<button mat-raised-button [routerLink]="['/']">Authorize Payments</button>

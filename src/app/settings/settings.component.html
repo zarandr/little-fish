@@ -1,0 +1,56 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <button mat-icon-button [routerLink]="['/']"><mat-icon>arrow_back</mat-icon></button>
+        <span class="toolbar-spacer"></span>
+        <span>Little Fish Settings</span>
+        <span class="toolbar-spacer"></span>
+        <mat-icon>settings</mat-icon>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <p>
+            Mode
+            <mat-button-toggle-group value="round">
+                <mat-button-toggle value="round">Round</mat-button-toggle>
+                <mat-button-toggle value="percent">Percent</mat-button-toggle>
+            </mat-button-toggle-group>
+        </p>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Donation</mat-card-title>
+        <img mat-card-avatar src="https://shpbeds.org/wp-content/uploads/2023/03/Donation.png">
+        <mat-slide-toggle [checked]="true"></mat-slide-toggle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-select value="redcross">
+            <mat-option value="redcross">Red Cross</mat-option>
+        </mat-select>
+    </mat-card-content>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Tips</mat-card-title>
+        <img mat-card-avatar src="https://norrismclaughlin.com/wp-content/uploads/sites/10/2022/12/Tip-Jar.jpg">
+        <mat-slide-toggle [checked]="false"></mat-slide-toggle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-select value="raif">
+            <mat-option value="raif">Raif Tips</mat-option>
+        </mat-select>
+    </mat-card-content>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Saving</mat-card-title>
+        <img mat-card-avatar src="https://m.media-amazon.com/images/I/51ckv2myWXL.jpg">
+        <mat-slide-toggle [checked]="false"></mat-slide-toggle>
+    </mat-card-header>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Little Fish Card</mat-card-title>
+        <img mat-card-avatar src="https://blogassets.airtel.in/wp-content/uploads/2023/11/Picture1.png">
+        <mat-slide-toggle [checked]="false"></mat-slide-toggle>
+    </mat-card-header>
+</mat-card>
